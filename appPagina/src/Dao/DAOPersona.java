@@ -37,6 +37,24 @@ public class DAOPersona {
        return this.arregloPersonas.size();
        
    }
+   
+   
+   public Persona buscar(String id){
+       
+       for (Persona pe : arregloPersonas){
+           
+           if(pe.getId().equals(id)){
+               return pe;
+           }
+           
+           
+       }
+       return null;
+       
+       
+       
+   }
+   
     
     
 }
